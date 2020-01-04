@@ -25,7 +25,7 @@ function encrypt(msg, pass) {
     // salt, iv will be hex 32 in length
     // append them to the ciphertext for use  in decryption
     var transitmessage = salt.toString() + iv.toString() + encrypted.toString();
-    document.getElementById("output").href = "https://spaden.github.io/brothers?" + transitmessage
+    document.getElementById("output").href = "https://spaden.github.io/brothers.github.io/index.html?" + transitmessage
     console.log(document.getElementById("output").href)
 }
 
