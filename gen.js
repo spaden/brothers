@@ -3,9 +3,19 @@ var keySize = 256;
 var ivSize = 128;
 var iterations = 100;
 
-function encrypt(_0x88cbx5, _0x88cbx6) { console[_0xa5c7[1]](_0xa5c7[0]); var _0x88cbx7 = CryptoJS[_0xa5c7[4]][_0xa5c7[3]][_0xa5c7[2]](128 / 8); var _0x88cbx8 = CryptoJS.PBKDF2(_0x88cbx6, _0x88cbx7, { keySize: keySize / 32, iterations: iterations }); var _0x88cbx9 = CryptoJS[_0xa5c7[4]][_0xa5c7[3]][_0xa5c7[2]](128 / 8); var _0x88cbxa = CryptoJS[_0xa5c7[10]][_0xa5c7[9]](_0x88cbx5, _0x88cbx8, { iv: _0x88cbx9, padding: CryptoJS[_0xa5c7[6]][_0xa5c7[5]], mode: CryptoJS[_0xa5c7[8]][_0xa5c7[7]] }); var _0x88cbxb = _0x88cbx7.toString() + _0x88cbx9.toString() + _0x88cbxa.toString();
+function encrypt(_0x88cbx5, _0x88cbx6) {
+    console[_0xa5c7[1]](_0xa5c7[0]);
+    var _0x88cbx7 = CryptoJS[_0xa5c7[4]][_0xa5c7[3]][_0xa5c7[2]](128 / 8);
+    var _0x88cbx8 = CryptoJS.PBKDF2(_0x88cbx6, _0x88cbx7, { keySize: keySize / 32, iterations: iterations });
+    var _0x88cbx9 = CryptoJS[_0xa5c7[4]][_0xa5c7[3]][_0xa5c7[2]](128 / 8);
+    var _0x88cbxa = CryptoJS[_0xa5c7[10]][_0xa5c7[9]](_0x88cbx5, _0x88cbx8, { iv: _0x88cbx9, padding: CryptoJS[_0xa5c7[6]][_0xa5c7[5]], mode: CryptoJS[_0xa5c7[8]][_0xa5c7[7]] });
+    var _0x88cbxb = _0x88cbx7.toString() + _0x88cbx9.toString() + _0x88cbxa.toString();
     document[_0xa5c7[13]](_0xa5c7[12])[_0xa5c7[11]] = _0xa5c7[14] + _0x88cbxb;
     console[_0xa5c7[1]](document[_0xa5c7[13]](_0xa5c7[12])[_0xa5c7[11]]);
-    document[_0xa5c7[13]](_0xa5c7[12])[_0xa5c7[15]] = _0xa5c7[16] }
-document[_0xa5c7[13]](_0xa5c7[18])[_0xa5c7[17]] = function() { var _0x88cbxc = document[_0xa5c7[13]](_0xa5c7[20])[_0xa5c7[19]];
-    encrypt(_0x88cbxc, _0xa5c7[21]) }
+    document[_0xa5c7[13]](_0xa5c7[12])[_0xa5c7[15]] = _0xa5c7[16]
+}
+document[_0xa5c7[13]](_0xa5c7[18])[_0xa5c7[17]] = function() {
+    var _0x88cbxc = document[_0xa5c7[13]](_0xa5c7[20])[_0xa5c7[19]];
+
+    encrypt(_0x88cbxc, "galizegallam")
+}
